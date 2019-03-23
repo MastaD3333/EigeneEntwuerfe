@@ -1,0 +1,22 @@
+--------------------------
+Magic_Number
+--------------------------
+
+
+	public static void main(String[] args) {
+		
+		// myNumber = the original number -> Ergebnis ist immer 3!
+		
+		System.out.print("Bitte geben Sie Ihre gewuenschte Zahl ein: ");
+		int myNumber 	= StdIn.readInt();
+			
+		int stepOne 	= myNumber	*	myNumber;
+		int stepTwo 	= stepOne	+	myNumber;
+		int stepThree	= stepTwo	/	myNumber;
+		int stepFour	= stepThree	+	17;
+		int stepFive	= stepFour	-	myNumber;
+		int stepSix		= stepFive	/	6;
+		    
+		System.out.println("Das Ergebnis ist: " + stepSix);
+	}
+}

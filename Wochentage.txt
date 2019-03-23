@@ -1,0 +1,48 @@
+--------------------------
+Wochentage
+--------------------------
+
+
+	public static void main(String[] args) {
+		// Wochentage mit Switch Case inkl. Daueraufforderung wegen falscher Eingabe!
+		
+			StdOut.println("Ohje...welcher Wochentag ist denn heute? Bitte gib einfach einen Wert zwischen 1 und 7 ein, und schon weisst du, welcher Wochentag heute ist: ");
+			int wochentage = StdIn.readInt();
+			
+			switch (wochentage){
+			case 1:
+				wochentage = 1;
+				StdOut.println("Es ist Montag");
+				break;
+			case 2: 
+				wochentage = 2;
+				StdOut.println("Es ist Dienstag");
+				break;
+			case 3: 
+				wochentage = 3;
+				StdOut.println("Es ist Mittwoch");
+				break;
+			case 4: 
+				wochentage = 4;
+				StdOut.println("Es ist Donnerstag");
+				break;
+			case 5: 
+				wochentage = 5;
+				StdOut.println("Es ist Freitag");
+				break;
+			case 6: 
+				wochentage = 6;
+				StdOut.println("Es ist Samstag");
+				break;
+			case 7: 
+				wochentage = 7;
+				StdOut.println("Es ist Sonntag");
+				break;
+				default:
+					while (wochentage > 7)	{
+						System.out.print("Fehler! Bitte geben Sie einen neuen Wert ein: ");
+						wochentage = StdIn.readInt();
+					}
+			}
+	}
+}
